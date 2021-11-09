@@ -1,10 +1,18 @@
 #include <iostream>
 using namespace std;
-int tong(int a, int b);
+
+
 int hieu(int a, int b)
 {
 	return a-b;
 }
+
+int tong(int a, int b)
+{
+	return a+b;
+}
+
+
 
 int main()
 {
@@ -15,9 +23,15 @@ int main()
 	cout << "Nhap so nguyen 2: ";
 	cin >> b;
 	cout << "Chon phep toan (+,-) ";
+
 	cin >> phepToan;
 	if(phepToan == '-')
 		cout << "Hieu 2 so la :"<<hieu(a,b)<<endl;
+
+	cin >> phepToan
+	if(phepToan=='+')
+		cout << "Tong 2 so la: "<<tong(a,b)<<endl;
+>
 	system("pause");
 	return 0;
 }
